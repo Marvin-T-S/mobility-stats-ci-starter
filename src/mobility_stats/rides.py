@@ -44,7 +44,7 @@ def count_by_rider_type(rides):
 
 def busiest_start_station(rides):
     """Return the start station with the most rides."""
-    if rides == None:
+    if rides is None:
         raise ValueError("rides must not be None")
     if len(rides) == 0:
         raise ValueError("rides must not be empty")
